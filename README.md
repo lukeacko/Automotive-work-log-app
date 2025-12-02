@@ -16,29 +16,32 @@
     <li>Track:
         <ul>
             <li>Job Number</li>
-            <li>VIN</li>
             <li>Technician</li>
             <li>Status (Pending / In Progress / Complete)</li>
             <li>Description</li>
             <li>Date</li>
+            <li>Vehicle make & model
         </ul>
     </li>
-    <li>Data handling - VINs must be 17 alphanumeric characters & Job number must be a 5 digit number
     <li>Filter and search logs by any field</li>
     <li>Sort columns directly in the logs table</li>
     <li>Export logs to CSV</li>
-    <li>Manage technicians (add new technicians)</li>
+    <li>Manage technicians (add new technicians and delete)</li>
 </ul>
 
 <h2>📸 Screenshots</h2>
 <p><strong>Main Form:</strong></p>
 <img src="screenshots/main_form.png" alt="Main Form" class="screenshot">
 
-<p><strong>View Logs:</strong></p>
+<p><strong>View Logs and manage them:</strong></p>
 <img src="screenshots/view_logs.png" alt="View Logs" class="screenshot">
 
 <p><strong>Manage Technicians:</strong></p>
 <img src="screenshots/manage_technicians.png" alt="View Logs" class="screenshot">
+
+<p><strong>Manage Vehicles:</strong></p>
+<img src="screenshots/add_vehicle_sucsess.png" alt="View Logs" class="screenshot">
+
 <h2>⚡ Quick Start</h2>
 <ol>
     <li>
