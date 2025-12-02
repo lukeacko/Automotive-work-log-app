@@ -1,88 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Work Log App (Firestore)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 900px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            background: #3498db;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+        .screenshot {
+            max-width: 100%;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
 <h1>🛠️ Automotive Work Log App (Firestore)</h1>
 
-A Python desktop application for managing automotive work logs with Firestore. Track jobs, technicians, status, and dates with a simple, user-friendly interface.
+<p>A Python desktop application for managing automotive work logs with Firestore. Track jobs, technicians, status, and dates with a simple, user-friendly interface.</p>
 
-🚀 Features
+<h2>🚀 Features</h2>
+<ul>
+    <li>Add, edit, delete work logs</li>
+    <li>Track:
+        <ul>
+            <li>Job Number</li>
+            <li>VIN</li>
+            <li>Technician</li>
+            <li>Status (Pending / In Progress / Complete)</li>
+            <li>Description</li>
+            <li>Date</li>
+        </ul>
+    </li>
+    <li>Filter and search logs by any field</li>
+    <li>Sort columns directly in the logs table</li>
+    <li>Export logs to CSV</li>
+    <li>Manage technicians (add new technicians)</li>
+</ul>
 
-Add, edit, delete work logs
+<h2>📸 Screenshots</h2>
+<p><strong>Main Form:</strong></p>
+<img src="screenshots/main_form.png" alt="Main Form" class="screenshot">
 
-Track:
+<p><strong>View Logs:</strong></p>
+<img src="screenshots/view_logs.png" alt="View Logs" class="screenshot">
 
-Job Number
+<h2>⚡ Quick Start</h2>
+<ol>
+    <li>
+        <strong>Clone the repo</strong>
+        <pre>git clone https://github.com/yourusername/automotive-work-log-app.git
+cd automotive-work-log-app</pre>
+    </li>
+    <li>
+        <strong>Install dependencies</strong>
+        <pre>pip install tk tkcalendar firebase-admin</pre>
+    </li>
+    <li>
+        <strong>Configure Firebase</strong>
+        <ul>
+            <li>Create a Firebase project and enable Firestore</li>
+            <li>Generate a service account JSON file</li>
+            <li>Save it as <code>serviceAccount.json</code> in the project folder</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Run the app</strong>
+        <pre>python main_firestore.py</pre>
+    </li>
+</ol>
 
-VIN
+<h2>📝 Usage</h2>
+<ul>
+    <li><strong>Add a job:</strong> Fill all fields → <code>Save Entry</code></li>
+    <li><strong>View logs:</strong> Click <code>View Job Logs</code> → filter or sort → <code>Search</code></li>
+    <li><strong>Edit a job:</strong> Double-click a row or select → <code>Edit Selected</code></li>
+    <li><strong>Delete a job:</strong> Select a row → <code>Delete Selected</code></li>
+    <li><strong>Export CSV:</strong> Click <code>Export CSV</code> in logs view</li>
+</ul>
 
-Technician
+<h2>⚙️ Requirements</h2>
+<ul>
+    <li>Python 3.10+</li>
+    <li>Tkinter</li>
+    <li>tkcalendar</li>
+    <li>Firebase Admin SDK</li>
+</ul>
 
-Status (Pending / In Progress / Complete)
-
-Description
-
-Date
-
-Filter and search logs by any field
-
-Sort columns directly in the logs table
-
-Export logs to CSV
-
-Manage technicians (add new technicians)
-
-📸 Screenshots
-
-Main Form: 
-
-View Logs:
-
-⚡ Quick Start
-1. Clone the repo
-git clone https://github.com/yourusername/automotive-work-log-app.git
-cd automotive-work-log-app
-
-2. Install dependencies
-pip install tk tkcalendar firebase-admin
-
-3. Configure Firebase
-
-Create a Firebase project and enable Firestore
-
-Generate a service account JSON file
-
-Save it as serviceAccount.json in the project folder
-
-4. Run the app
-python main_firestore.py
-
-📝 Usage
-
-Add a job: Fill all fields → Save Entry
-
-View logs: Click View Job Logs → filter or sort → Search
-
-Edit a job: Double-click a row or select → Edit Selected
-
-Delete a job: Select a row → Delete Selected
-
-Export CSV: Click Export CSV in logs view
-
-⚙️ Requirements
-
-Python 3.10+
-
-Tkinter
-
-tkcalendar
-
-Firebase Admin SDK
-
-🛠️ Project Structure
+<h2>🛠️ Project Structure</h2>
+<pre>
 /automotive-work-log-app
 │
 ├─ main_firestore.py       # Main application
 ├─ serviceAccount.json    # Firebase credentials
 ├─ README.md              # This file
 └─ screenshots/           # Screenshots of application
+</pre>
 
-📄 License
+<h2>📄 License</h2>
+<p>MIT License</p>
 
-MIT License
+</body>
+</html>
