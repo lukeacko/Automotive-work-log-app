@@ -1,4 +1,4 @@
-🛠️ Automotive Work Log App (Firestore)
+<h1>🛠️ Automotive Work Log App (Firestore)</h1>
 
 A Python desktop application for managing automotive work logs with Firestore. Track jobs, technicians, status, and dates with a simple, user-friendly interface.
 
