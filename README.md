@@ -3,47 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automotive Work Log App (Firestore)</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            max-width: 900px;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        code {
-            background: #f4f4f4;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        pre {
-            background: #f4f4f4;
-            padding: 10px;
-            border-radius: 6px;
-            overflow-x: auto;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        .badge {
-            display: inline-block;
-            padding: 3px 8px;
-            background: #3498db;
-            color: #fff;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin-right: 5px;
-        }
-        .screenshot {
-            max-width: 100%;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-        }
-    </style>
 </head>
 <body>
 
